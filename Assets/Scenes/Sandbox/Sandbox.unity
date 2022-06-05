@@ -2790,10 +2790,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 924269752, guid: a79f3961276f2a34295853f9f939e75a, type: 3}
-      propertyPath: m_Avatar
-      value: 
-      objectReference: {fileID: 9000000, guid: d288a0e4a2d923b46898986e979da643, type: 3}
     - target: {fileID: 7305070885461184059, guid: a79f3961276f2a34295853f9f939e75a, type: 3}
       propertyPath: target
       value: 
