@@ -44,16 +44,11 @@ namespace RPG.Control
 
             if (hasHit)
             {
-                if (Input.GetMouseButton(0))
+                if (Input.GetMouseButton(1))
                     GetComponent<Mover>().MoveTo(hit.point);
                 return true;
             }
             return false;
-        }
-
-        private void MoveToCursor()
-        {
-
         }
 
         private static Ray GetMouseRay()
