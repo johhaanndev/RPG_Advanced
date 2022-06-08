@@ -42,7 +42,7 @@ namespace RPG.Movement
             Vector3 velocity = navMeshAgent.velocity;
             Vector3 localVelocity = transform.InverseTransformDirection(velocity);
             float speed = localVelocity.z;
-            GetComponent<Animator>().SetFloat("ForwardSpeed", speed);
+            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
     }
 }
