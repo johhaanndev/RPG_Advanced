@@ -8,15 +8,18 @@ namespace RPG.Movement
     {
         [SerializeField] private Transform target;
 
-        NavMeshAgent navMeshAgent;
+        private NavMeshAgent navMeshAgent;
+        private Health health;
 
         private void Start()
         {
             navMeshAgent = GetComponent<NavMeshAgent>();
+            health = GetComponent<Health>();
         }
 
         void Update()
         {
+            navMeshAgent.enabled = !health.IsDead();
             UpdateAnimator();
         }
 
